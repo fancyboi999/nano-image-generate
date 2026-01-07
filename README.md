@@ -18,11 +18,28 @@ Generate high-fidelity assets, logos, and prototypes using **Nano Banana Pro** (
 
 ## Installation
 
-### From GitHub (Recommended)
+## Supported Agents
+By default, install targets all agents. Use --agent <name> to install to a specific one.
+
+| Agent | Flag | Install Location |
+| --- | --- | --- |
+| Claude Code | --agent claude | ~/.claude/skills/ |
+| Cursor | --agent cursor | .cursor/skills/ |
+| Codex | --agent codex | ~/.codex/skills/ |
+| Amp | --agent amp | ~/.amp/skills/ |
+| VS Code / Copilot | --agent vscode | .github/skills/ |
+| Goose | --agent goose | ~/.config/goose/skills/ |
+| OpenCode | --agent opencode | ~/.opencode/skill/ |
+| Letta | --agent letta | ~/.letta/skills/ |
+| Portable | --agent project | .skills/ (works with any agent) |
+
+## Fast Install
+FOR CLAUDE CODE：
 
 ```bash
-claude skill add github:fancyboi999/nano-image-generate
+npx -y ai-agent-skills install fancyboi999/video-toolkit-skills --agent claude
 ```
+
 
 ### From Local Path
 

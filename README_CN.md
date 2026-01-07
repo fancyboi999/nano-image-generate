@@ -18,10 +18,26 @@
 
 ## 安装
 
-### 从 GitHub 安装（推荐）
+## 支持的 Agent
+默认安装目标为所有 Agent。使用 --agent <name> 指定特定目标。
+
+| Agent | Flag | 安装位置 |
+| --- | --- | --- |
+| Claude Code | --agent claude | ~/.claude/skills/ |
+| Cursor | --agent cursor | .cursor/skills/ |
+| Codex | --agent codex | ~/.codex/skills/ |
+| Amp | --agent amp | ~/.amp/skills/ |
+| VS Code / Copilot | --agent vscode | .github/skills/ |
+| Goose | --agent goose | ~/.config/goose/skills/ |
+| OpenCode | --agent opencode | ~/.opencode/skill/ |
+| Letta | --agent letta | ~/.letta/skills/ |
+| Portable | --agent project | .skills/ (适用于任何 Agent) |
+
+## 快速安装
+适用于 CLAUDE CODE：
 
 ```bash
-claude skill add github:fancyboi999/nano-image-generate
+npx -y ai-agent-skills install fancyboi999/nano-image-generate --agent claude
 ```
 
 ### 从本地路径安装
